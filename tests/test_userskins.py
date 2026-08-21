@@ -122,7 +122,8 @@ class ShippedArtIsolationTests(unittest.TestCase):
     def test_the_builtin_list_is_what_the_art_gates_iterate(self) -> None:
         self.assertEqual(
             [s.id for s in skins.BUILTIN_SKINS],
-            ["deepseek", "bluewhale", "threadcore", "nautilus", "jellyfish", "claude"],
+            ["deepseek", "bluewhale", "threadcore", "nautilus", "jellyfish", "claude",
+             "star"],
         )
         for skin in skins.BUILTIN_SKINS:
             self.assertTrue(skin.builtin)

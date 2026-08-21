@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "type": "module",
-  "description": "Always-on-top macOS desk pet for the DeepSeek Harness, with a native menu and DIY skins. Shows what your agent is doing: working, waiting, finished, failed. Six skins, or make your own from one image. No dependencies.",
+  "description": "Always-on-top macOS desk pet for the DeepSeek Harness, with a native menu and DIY skins. Shows what your agent is doing: working, waiting, finished, failed. Seven skins, or make your own from one image. No dependencies.",
   "author": "Jackie",
   "homepage": "https://github.com/Dkrillex/dsh-macos-pet#readme",
   "bugs": "https://github.com/Dkrillex/dsh-macos-pet/issues",

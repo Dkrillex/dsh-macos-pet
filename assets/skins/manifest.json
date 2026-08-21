@@ -861,6 +861,178 @@
         ]
       }
     },
+    "star": {
+      "crop_relative": [
+        0.1367,
+        0.2129,
+        0.9238,
+        0.7383
+      ],
+      "keys": {
+        "error/00": "0xFF00FF",
+        "error/01": "0xFF00FF",
+        "error/02": "0xFF00FF",
+        "happy/00": "0xFF00FF",
+        "happy/01": "0xFF00FF",
+        "happy/02": "0xFF00FF",
+        "idle/00": "0xFF00FF",
+        "idle/01": "0xFF00FF",
+        "idle/02": "0xFF00FF",
+        "sleeping/00": "0xFF00FF",
+        "sleeping/01": "0xFF00FF",
+        "sleeping/02": "0xFF00FF",
+        "waiting/00": "0xFF00FF",
+        "waiting/01": "0xFF00FF",
+        "waiting/02": "0xFF00FF",
+        "working/00": "0xFF00FF",
+        "working/01": "0xFF00FF",
+        "working/02": "0xFF00FF"
+      },
+      "states": {
+        "error": [
+          "00.gif",
+          "01.gif",
+          "02.gif"
+        ],
+        "happy": [
+          "00.gif",
+          "01.gif",
+          "02.gif"
+        ],
+        "idle": [
+          "00.gif",
+          "01.gif",
+          "02.gif"
+        ],
+        "sleeping": [
+          "00.gif",
+          "01.gif",
+          "02.gif"
+        ],
+        "waiting": [
+          "00.gif",
+          "01.gif",
+          "02.gif"
+        ],
+        "working": [
+          "00.gif",
+          "01.gif",
+          "02.gif"
+        ]
+      },
+      "subject_box": [
+        12,
+        61,
+        188,
+        187
+      ],
+      "timelines": {
+        "error": [
+          [
+            0,
+            800
+          ],
+          [
+            1,
+            300
+          ],
+          [
+            2,
+            300
+          ]
+        ],
+        "happy": [
+          [
+            0,
+            200
+          ],
+          [
+            1,
+            180
+          ],
+          [
+            2,
+            180
+          ]
+        ],
+        "idle": [
+          [
+            0,
+            2400
+          ],
+          [
+            2,
+            60
+          ],
+          [
+            1,
+            120
+          ],
+          [
+            2,
+            60
+          ],
+          [
+            0,
+            300
+          ],
+          [
+            2,
+            60
+          ],
+          [
+            1,
+            120
+          ],
+          [
+            2,
+            60
+          ]
+        ],
+        "sleeping": [
+          [
+            0,
+            1500
+          ],
+          [
+            1,
+            1300
+          ],
+          [
+            2,
+            1300
+          ]
+        ],
+        "waiting": [
+          [
+            0,
+            700
+          ],
+          [
+            1,
+            460
+          ],
+          [
+            2,
+            460
+          ]
+        ],
+        "working": [
+          [
+            0,
+            300
+          ],
+          [
+            1,
+            260
+          ],
+          [
+            2,
+            260
+          ]
+        ]
+      }
+    },
     "threadcore": {
       "crop_relative": [
         0.0889,

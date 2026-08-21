@@ -77,6 +77,7 @@
 | 鹦鹉螺 | ![nautilus](docs/media/skin-nautilus.png) | 内置 | |
 | 水母 | ![jellyfish](docs/media/skin-jellyfish.png) | 内置 | |
 | Claude | ![claude](docs/media/skin-claude.png) | 内置 | 几何绘制，不需要生图工具 |
+| 星星 | ![star](docs/media/skin-star.png) | 内置 | 同一个生成器，另一份 Spec |
 
 <!-- 社区投稿从这一行下面开始追加 -->
 

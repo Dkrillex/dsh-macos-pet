@@ -132,11 +132,20 @@ class Shape:
     crest_reach: float = 152.0
     crest_w0: float = 24.0
     crest_w1: float = 5.0
+    # How long the odd rays are relative to the even ones. Alternating lengths
+    # read as a mane; 1.0 makes every ray equal, which is what reads as a star.
+    crest_alt: float = 0.78
     # No ray tip may come closer than this to the belly line.
     crest_floor_margin: float = 10.0
     # Rays aimed more steeply downward than this are dropped rather than
     # shortened: clamping them left a row of stubs under the body.
     crest_down_limit: float = 0.62
+
+    # How far out the overhead glyphs sit, relative to the reference body. A
+    # longer crest needs a bigger number or the glyph lands on a ray: it stays
+    # legible, but it fuses with the body and the gate can no longer tell a
+    # merged prop from a vanished one.
+    prop_scale: float = 1.0
 
     arm_w0: float = 17.0
     arm_w1: float = 13.0
@@ -170,6 +179,33 @@ SPECS: dict[str, Spec] = {
             body_light=(232, 155, 125),
             face=(240, 238, 230),
             ink=(61, 43, 36),
+        ),
+    ),
+    # Distances to the plate, summed over channels: body 396, dark 412,
+    # light 360, face 273, ink 466.
+    "star": Spec(
+        palette=Palette(
+            body=(230, 176, 60),
+            body_dark=(196, 138, 38),
+            body_light=(246, 208, 112),
+            face=(250, 245, 232),
+            ink=(58, 44, 30),
+        ),
+        shape=Shape(
+            body_rx=86.0,
+            body_ry=82.0,
+            face_rx=58.0,
+            face_ry=53.0,
+            eye_dx=21.0,
+            mouth_dy=20.0,
+            crest_rays=10,
+            crest_alt=1.0,
+            crest_inner=68.0,
+            crest_reach=170.0,
+            crest_w0=30.0,
+            crest_w1=3.0,
+            arm_shoulder_inset=22.0,
+            prop_scale=1.14,
         ),
     ),
 }
@@ -337,8 +373,7 @@ class Pen:
             spread = 1.0 - droop / 90.0
             a = math.radians(90.0 + (360.0 * i / s.crest_rays - 90.0) * spread + phase)
             dx, dy = math.cos(a), -math.sin(a)
-            # Long and short rays alternate: even lengths read as a comb.
-            length = reach * (1.0 if i % 2 == 0 else 0.78)
+            length = reach * (1.0 if i % 2 == 0 else s.crest_alt)
             if dy > s.crest_down_limit:
                 # Aimed almost straight down. Clamping these to the belly line
                 # left a row of stubs under the body; the silhouette is round
@@ -460,7 +495,15 @@ class Pen:
     # and a prop in a plate-adjacent colour is keyed away with the background.
 
     def _at(self, dx: float, dy: float) -> tuple[float, float]:
+        """Body-relative. For anything held, which must track the hand."""
+
         return self.cx + dx, self.body_cy + dy
+
+    def _overhead(self, dx: float, dy: float) -> tuple[float, float]:
+        """Body-relative and pushed out past the crest. For the free glyphs."""
+
+        k = self.s.prop_scale
+        return self.cx + dx * k, self.body_cy + dy * k
 
     def pencil(self, dx: float, dy: float, angle: float) -> None:
         p, c = self.p, self.c
@@ -474,7 +517,7 @@ class Pen:
 
     def question(self, dx: float, dy: float, lean: float, scale: float) -> None:
         p, c = self.p, self.c
-        cx, cy = self._at(dx, dy)
+        cx, cy = self._overhead(dx, dy)
         a = math.radians(lean)
         ca, sa = math.cos(a), math.sin(a)
 
@@ -487,21 +530,21 @@ class Pen:
 
     def bang(self, dx: float, dy: float, scale: float) -> None:
         p, c = self.p, self.c
-        cx, cy = self._at(dx, dy)
+        cx, cy = self._overhead(dx, dy)
         c.cone(cx, cy - 22.0 * scale, cx, cy + 9.0 * scale,
                6.6 * scale, 4.4 * scale, p.ink)
         c.ellipse(cx, cy + 22.0 * scale, 5.6 * scale, 5.6 * scale, p.ink)
 
     def zed(self, dx: float, dy: float, scale: float) -> None:
         p, c = self.p, self.c
-        cx, cy = self._at(dx, dy)
+        cx, cy = self._overhead(dx, dy)
         d = 13.0 * scale
         c.curve([(cx - d, cy - d), (cx + d, cy - d), (cx - d, cy + d), (cx + d, cy + d)],
                 4.2 * scale, p.face)
 
     def sparkle(self, dx: float, dy: float, scale: float) -> None:
         p, c = self.p, self.c
-        cx, cy = self._at(dx, dy)
+        cx, cy = self._overhead(dx, dy)
         d = 15.0 * scale
         c.cone(cx, cy - d, cx, cy + d, 4.2 * scale, 4.2 * scale, p.face)
         c.cone(cx - d, cy, cx + d, cy, 4.2 * scale, 4.2 * scale, p.face)

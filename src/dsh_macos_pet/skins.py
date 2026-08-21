@@ -51,6 +51,7 @@ BUILTIN_SKINS: tuple[Skin, ...] = (
     Skin(id="nautilus", name="Nautilus", name_zh="鹦鹉螺"),
     Skin(id="jellyfish", name="Jellyfish", name_zh="水母"),
     Skin(id="claude", name="Claude", name_zh="Claude"),
+    Skin(id="star", name="Star", name_zh="星星"),
 )
 
 DEFAULT_SKIN_ID = "deepseek"

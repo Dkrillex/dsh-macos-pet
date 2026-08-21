@@ -123,7 +123,7 @@ stateDiagram-v2
 
 在右键菜单的皮肤子菜单里挑，或者用 `--skin <id>` 指定启动时用哪套。每套六个状态齐全，每个状态三帧。
 
-前五套是图像模型画的。**Claude 那套是几何画的** —— [scripts/draw_skin.py](scripts/draw_skin.py) 用纯标准库生成十八张源图，再走和其他皮肤同一条构建管线。所以没有生图工具、没有 API 额度也能重现它，而且每次生成的结果逐字节一致。想照这个路子做自己的皮肤，它可以当模板。
+前五套是图像模型画的。**Claude 和星星是几何画的** —— [scripts/draw_skin.py](scripts/draw_skin.py) 用纯标准库生成十八张源图，再走和其他皮肤同一条构建管线。所以没有生图工具、没有 API 额度也能重现它，而且每次生成的结果逐字节一致。想照这个路子做自己的皮肤，它可以当模板。
 
 | 皮肤 | 动起来 |
 |---|---|
@@ -133,6 +133,7 @@ stateDiagram-v2
 | **鹦鹉螺** | <img src="docs/media/loop-nautilus.gif" width="120" alt="nautilus"> |
 | **水母** | <img src="docs/media/loop-jellyfish.gif" width="120" alt="jellyfish"> |
 | **Claude** | <img src="docs/media/loop-claude.gif" width="120" alt="claude"> |
+| **星星** | <img src="docs/media/loop-star.gif" width="120" alt="star"> |
 
 > 空闲是 2.4 秒静止，然后一次很短的眨眼。三帧均分我试过，效果不好。
 
@@ -169,6 +170,11 @@ stateDiagram-v2
   <img src="docs/media/skin-claude.png" width="820" alt="claude">
 </p>
 <p align="center"><sub>Claude</sub></p>
+
+<p align="center">
+  <img src="docs/media/skin-star.png" width="820" alt="star">
+</p>
+<p align="center"><sub>星星</sub></p>
 
 ### 用一张图做你自己的皮肤
 

@@ -135,7 +135,7 @@ stateDiagram-v2
 Pick one from the Skin submenu, or start on it with `--skin <id>`. Every skin
 has all six states at three frames each.
 
-The first five came out of an image model. **The Claude one is drawn**:
+The first five came out of an image model. **Claude and Star are drawn**:
 [scripts/draw_skin.py](scripts/draw_skin.py) renders its
 eighteen stills from geometry in pure standard library, and they go through the
 same build pipeline as every other skin. So it reproduces with no image tool and
@@ -150,6 +150,7 @@ draw a skin than generate one.
 | **Nautilus** | <img src="docs/media/loop-nautilus.gif" width="120" alt="nautilus"> |
 | **Jellyfish** | <img src="docs/media/loop-jellyfish.gif" width="120" alt="jellyfish"> |
 | **Claude** | <img src="docs/media/loop-claude.gif" width="120" alt="claude"> |
+| **Star** | <img src="docs/media/loop-star.gif" width="120" alt="star"> |
 
 > Idle is 2.4 seconds of stillness and then a very short blink. I tried giving the
 > three frames equal time and it did not look right.
@@ -187,6 +188,11 @@ In order: idle · working · waiting · error · happy · sleeping
   <img src="docs/media/skin-claude.png" width="820" alt="claude">
 </p>
 <p align="center"><sub>Claude</sub></p>
+
+<p align="center">
+  <img src="docs/media/skin-star.png" width="820" alt="star">
+</p>
+<p align="center"><sub>Star</sub></p>
 
 **Make your own from a picture.** Hand an image to your agent and ask it to make
 a desk pet skin. A skill ships with the plugin that turns one image into the
