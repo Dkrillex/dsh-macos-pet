@@ -67,7 +67,7 @@
 
 ## 画廊
 
-内置的五套在最前面，社区投稿接在后面。
+内置的几套在最前面，社区投稿接在后面。
 
 | 皮肤 | 预览 | 作者 | 说明 |
 |---|---|---|---|
@@ -76,6 +76,7 @@
 | 线核 | ![threadcore](docs/media/skin-threadcore.png) | 内置 | |
 | 鹦鹉螺 | ![nautilus](docs/media/skin-nautilus.png) | 内置 | |
 | 水母 | ![jellyfish](docs/media/skin-jellyfish.png) | 内置 | |
+| Claude | ![claude](docs/media/skin-claude.png) | 内置 | 几何绘制，不需要生图工具 |
 
 <!-- 社区投稿从这一行下面开始追加 -->
 

@@ -115,7 +115,7 @@ stateDiagram-v2
 ## Skins
 
 <p align="center">
-  <img src="docs/media/skins.png" width="600" alt="Five skins">
+  <img src="docs/media/skins.png" width="600" alt="The built-in skins">
 </p>
 
 Pick one from the Skin submenu, or start on it with `--skin <id>`. Every skin
@@ -128,6 +128,7 @@ has all six states at three frames each.
 | **Threadcore** | <img src="docs/media/loop-threadcore.gif" width="120" alt="threadcore"> |
 | **Nautilus** | <img src="docs/media/loop-nautilus.gif" width="120" alt="nautilus"> |
 | **Jellyfish** | <img src="docs/media/loop-jellyfish.gif" width="120" alt="jellyfish"> |
+| **Claude** | <img src="docs/media/loop-claude.gif" width="120" alt="claude"> |
 
 > Idle is 2.4 seconds of stillness and then a very short blink. I tried giving the
 > three frames equal time and it did not look right.
@@ -160,6 +161,11 @@ In order: idle · working · waiting · error · happy · sleeping
   <img src="docs/media/skin-jellyfish.png" width="820" alt="jellyfish">
 </p>
 <p align="center"><sub>Jellyfish</sub></p>
+
+<p align="center">
+  <img src="docs/media/skin-claude.png" width="820" alt="claude">
+</p>
+<p align="center"><sub>Claude</sub></p>
 
 **Make your own from a picture.** Hand an image to your agent and ask it to make
 a desk pet skin. A skill ships with the plugin that turns one image into the

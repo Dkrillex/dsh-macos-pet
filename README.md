@@ -110,7 +110,7 @@ stateDiagram-v2
 ## 皮肤
 
 <p align="center">
-  <img src="docs/media/skins.png" width="600" alt="五套皮肤">
+  <img src="docs/media/skins.png" width="600" alt="内置皮肤">
 </p>
 
 在右键菜单的皮肤子菜单里挑，或者用 `--skin <id>` 指定启动时用哪套。每套六个状态齐全，每个状态三帧。
@@ -122,6 +122,7 @@ stateDiagram-v2
 | **线核** | <img src="docs/media/loop-threadcore.gif" width="120" alt="threadcore"> |
 | **鹦鹉螺** | <img src="docs/media/loop-nautilus.gif" width="120" alt="nautilus"> |
 | **水母** | <img src="docs/media/loop-jellyfish.gif" width="120" alt="jellyfish"> |
+| **Claude** | <img src="docs/media/loop-claude.gif" width="120" alt="claude"> |
 
 > 空闲是 2.4 秒静止，然后一次很短的眨眼。三帧均分我试过，效果不好。
 
@@ -153,6 +154,11 @@ stateDiagram-v2
   <img src="docs/media/skin-jellyfish.png" width="820" alt="jellyfish">
 </p>
 <p align="center"><sub>水母</sub></p>
+
+<p align="center">
+  <img src="docs/media/skin-claude.png" width="820" alt="claude">
+</p>
+<p align="center"><sub>Claude</sub></p>
 
 ### 用一张图做你自己的皮肤
 
