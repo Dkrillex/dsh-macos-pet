@@ -1,4 +1,4 @@
-# DSH Desk Pet
+# DSH macOS Pet
 
 <p align="center"><b>English</b> · <a href="README.md">简体中文</a></p>
 
@@ -216,3 +216,7 @@ What is planned next, and what is deliberately not: [docs/ROADMAP.md](docs/ROADM
 ## License
 
 MIT.
+
+Maintained by Jackie ([@Dkrillex](https://github.com/Dkrillex)).
+
+Based on [anneheartrecord/dsh-desk-pet](https://github.com/anneheartrecord/dsh-desk-pet), also MIT; the original copyright notice is retained in [LICENSE](LICENSE).

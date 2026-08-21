@@ -1,4 +1,4 @@
-# DSH Desk Pet
+# DSH macOS Pet
 
 <p align="center"><a href="README_EN.md">English</a> · <b>简体中文</b></p>
 
@@ -200,3 +200,7 @@ stateDiagram-v2
 ## 许可
 
 MIT。
+
+维护：Jackie（[@Dkrillex](https://github.com/Dkrillex)）。
+
+基于 [anneheartrecord/dsh-desk-pet](https://github.com/anneheartrecord/dsh-desk-pet)，同为 MIT 许可；原始版权声明保留在 [LICENSE](LICENSE) 中。
