@@ -34,6 +34,20 @@
 
 ---
 
+## What it is for
+
+You set an agent going on something long, then switch away. Is it done? Did it
+fail? Or is it sitting there waiting for you to approve one command?
+
+Finding out means switching back. The switch itself is not what costs you — the
+interruption to whatever you moved on to is, and you make it many times over one
+task. Blocked-on-you is the expensive case: the agent is doing nothing at all,
+and you are the only one who does not know.
+
+The pet is the answer to not switching back. It floats above every window,
+fullscreen ones included, so a glance at the corner of the screen is the whole
+check.
+
 ## Install
 
 With DSH already set up, one command:
