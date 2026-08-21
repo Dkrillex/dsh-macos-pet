@@ -139,8 +139,8 @@ The first five came out of an image model. **Claude and Star are drawn**:
 [scripts/draw_skin.py](scripts/draw_skin.py) renders its
 eighteen stills from geometry in pure standard library, and they go through the
 same build pipeline as every other skin. So it reproduces with no image tool and
-no API credits, byte for byte, and it works as a template if you would rather
-draw a skin than generate one.
+no API credits, byte for byte, and if you would rather draw a skin than
+generate one, [docs/DRAWN-SKINS.md](docs/DRAWN-SKINS.md) is the guide.
 
 | Skin | In motion |
 |---|---|

@@ -79,6 +79,8 @@
 | Claude | ![claude](docs/media/skin-claude.png) | 内置 | 几何绘制，不需要生图工具 |
 | 星星 | ![star](docs/media/skin-star.png) | 内置 | 同一个生成器，另一份 Spec |
 
+没有生图工具也能做一套投进来：[docs/DRAWN-SKINS.md](docs/DRAWN-SKINS.md) 讲的是纯几何那条路，不烧额度、结果可复现。
+
 <!-- 社区投稿从这一行下面开始追加 -->
 
 ---
