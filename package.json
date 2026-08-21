@@ -1,0 +1,55 @@
+{
+  "name": "dsh-macos-pet",
+  "version": "0.3.0",
+  "private": false,
+  "type": "module",
+  "description": "Always-on-top macOS desk pet for the DeepSeek Harness, with a native menu and DIY skins. Shows what your agent is doing: working, waiting, finished, failed. Five skins, or make your own from one image. No dependencies.",
+  "author": "Jackie",
+  "homepage": "https://github.com/Dkrillex/dsh-macos-pet#readme",
+  "bugs": "https://github.com/Dkrillex/dsh-macos-pet/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dkrillex/dsh-macos-pet.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "desktop-pet"
+  ],
+  "bin": {
+    "dsh-macos-pet": "bin/dsh-macos-pet"
+  },
+  "main": "./plugin/index.mjs",
+  "exports": {
+    ".": "./plugin/index.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "assets/skins/manifest.json",
+    "assets/web",
+    "bin",
+    "plugin",
+    "skills",
+    "src",
+    "cordis.patch.yml",
+    "docs/media",
+    "README.md",
+    "README_EN.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "start": "bin/dsh-macos-pet",
+    "test": "/usr/bin/python3 -m unittest discover -t . -s tests -v"
+  },
+  "os": [
+    "darwin"
+  ]
+}
