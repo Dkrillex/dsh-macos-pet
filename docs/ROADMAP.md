@@ -12,7 +12,7 @@ own tool and credentials, installed outside the package so an upgrade cannot
 delete it. The frame pipeline is pure standard library — no ffmpeg — which is
 what let the install path exist on a user's machine at all.
 
-## Shipped in 0.3.0
+## Shipped in 0.1.0
 
 `--skin-sheet <id>` draws a skin's six states as one image, so a skin generated
 from someone's photo can leave the machine that generated it. Before this the

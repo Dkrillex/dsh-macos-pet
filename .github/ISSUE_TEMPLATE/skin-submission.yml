@@ -9,7 +9,7 @@ body:
         投稿只要一张预览图，**不要上传帧素材**——十八张 PNG 会撑爆仓库，
         而且那是从你的照片生成的东西，该由你决定它去哪里。
 
-        先用一条命令生成预览图（需要 0.3.0 或更新）：
+        先用一条命令生成预览图：
 
         ```bash
         ~/.dsh/profiles/web/node_modules/deepseek-desk-pet/bin/dsh-macos-pet --skin-sheet <你的皮肤id>
