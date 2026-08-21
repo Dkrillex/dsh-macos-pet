@@ -135,6 +135,13 @@ stateDiagram-v2
 Pick one from the Skin submenu, or start on it with `--skin <id>`. Every skin
 has all six states at three frames each.
 
+The first five came out of an image model. **The Claude one is drawn**:
+[scripts/draw_claude_source.py](scripts/draw_claude_source.py) renders its
+eighteen stills from geometry in pure standard library, and they go through the
+same build pipeline as every other skin. So it reproduces with no image tool and
+no API credits, byte for byte, and it works as a template if you would rather
+draw a skin than generate one.
+
 | Skin | In motion |
 |---|---|
 | **DeepSeek Whale (default)** | <img src="docs/media/loop-deepseek.gif" width="120" alt="deepseek"> |

@@ -123,6 +123,8 @@ stateDiagram-v2
 
 在右键菜单的皮肤子菜单里挑，或者用 `--skin <id>` 指定启动时用哪套。每套六个状态齐全，每个状态三帧。
 
+前五套是图像模型画的。**Claude 那套是几何画的** —— [scripts/draw_claude_source.py](scripts/draw_claude_source.py) 用纯标准库生成十八张源图，再走和其他皮肤同一条构建管线。所以没有生图工具、没有 API 额度也能重现它，而且每次生成的结果逐字节一致。想照这个路子做自己的皮肤，它可以当模板。
+
 | 皮肤 | 动起来 |
 |---|---|
 | **深索鲸（默认）** | <img src="docs/media/loop-deepseek.gif" width="120" alt="deepseek"> |
